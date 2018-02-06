@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="formtable">
+    <view class="item">
+      <view class="item-info">您的姓名：</view>
+      <view><input type="text" bindinput="unameInput" /></view>
+    </view>
+    <view class="item">
+      <view class="item-info">门诊号或住院号：</view>
+      <view><input type="numbert" bindinput="uidInput" /></view>
+    </view>
+    <view class="item">
+      <view class="item-info">复发转移：</view>
+      <view>
+        <radio-group class="radio-group" bindchange="radioChange">
+          <label class="radio" wx:for="{{radio_items}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+          </label>
+        </radio-group>
+      </view>
+    </view>
+    <view class="item">
+      <view class="item-info">留言：</view>
+      <view><input type="text" bindinput="remarkInput" /></view>
+    </view>
+    <view class="item">
+      <button class="submit-btn" type="primary" bindtap="btnClick">提交</button>
+    </view>
+  </view>
+
+  <!-- <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+</view>

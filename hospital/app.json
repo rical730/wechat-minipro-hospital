@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/success/success",
+    "pages/fail/fail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "复旦大学附属中山医院胸外科",
+    "navigationBarTextStyle":"black"
+  }
+}

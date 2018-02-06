@@ -1,0 +1,4 @@
+<view class="container">
+  数据提交失败，请联系胖树管理员！
+  {{app.globalData.errInfo}}
+</view>

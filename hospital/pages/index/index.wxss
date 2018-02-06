@@ -1,0 +1,41 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 10rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  font-size: 10px;
+}
+
+.item {
+   /* display: flex;
+  flex-direction: row;  */
+  align-items: left;
+  margin-top: 20px;
+}
+
+.item-info {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.item input {
+  border: solid 1px #cdcdcd;
+  padding: 5px;
+  margin: 5px;
+}
+
+/* .usermotto {
+  margin-top: 100px;
+} */
