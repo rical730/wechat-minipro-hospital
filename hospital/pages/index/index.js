@@ -46,7 +46,7 @@ Page({
 
   btnClick:function() {
     wx.request({
-      url: 'https://446763803.mylightsite.com/hospitalBack/receivedata.php', 
+      url: 'https://4*******03.mylightsite.com/hospitalBack/receivedata.php',   //需要改成自己的服务器域名！！！！！！！！！！！！！
       data: {
         a: this.data.uname,
         b: this.data.uid,
